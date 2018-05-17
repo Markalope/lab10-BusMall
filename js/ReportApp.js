@@ -13,11 +13,11 @@ class ReportApp {
     render() {
         const dom = appTemplate.content;
 
-        const button = dom.querySelector('button');
-        button.addEventListener('click', () => {
-            clearReportData();
-            window.location.reload();
-        });
+        // const button = dom.querySelector('button');
+        // button.addEventListener('click', () => {
+        //     clearReportData();
+        //     window.location.reload();
+        // });
 
         const viewingReportSection = dom.getElementById('report-container');
         const viewingReportComponent = new ViewingReport(this.productOption);

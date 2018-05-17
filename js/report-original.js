@@ -1,8 +1,9 @@
 'use strict';
-/* exported ViewingReport ViewsVotesReport */
+
+/* exported ViewingReport ViewsVotesReport productOption */
 
 const viewingReportTemplate = document.getElementById('report-container-template').content;
-let ViewsVotesReport = '';
+let ViewsAndVotesReport = '';
 
 class ViewingReport {
     constructor(productOption) {
@@ -16,7 +17,7 @@ class ViewingReport {
             this.tableBody.lastElementChild.remove();
         }
         for(let i = 0; i < this.productOption.length; i++) {
-            const reportComponent = new ViewsVotesReport(this.productOption[i]);
+            const reportComponent = new ViewsAndVotesReport(this.productOption[i]);
             this.tableBody.appendChild(reportComponent.render());
         }
 
@@ -27,14 +28,10 @@ class ViewingReport {
         const header = dom.querySelector('h2');
         const table = dom.querySelector('table');
 
-        header.addEventListener('click', () => {
-            table.classList.toggle('hidden');
-        });
-
         this.tableBody = dom.querySelector('tbody');
 
         for(let i = 0; i < this.productOption.length; i++){
-            const reportComponent = new ViewsVotesReport(this.productOption[i]);
+            const reportComponent = new ViewsAndVotesReport(this.productOption[i]);
             this.tableBody.appendChild(reportComponent.render());
         }
         return dom;
