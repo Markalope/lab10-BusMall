@@ -13,11 +13,16 @@
 <body>
     <div id = "root"></div>
     <header>
+        <div id = "logo-nav">
+            <img src="img/logo.png" height = "80px">
+            <span class = "nav"><a href="index.html">Home</a>  <button>Clear Data</button></span>
+        </div>
     <h1>BusMall Product Selection Survey Results</h1>
     <h2>The Votes Are In</h2>
     </header>   
 
     <p><strong>The customers have chosen</strong> and here are the results! This is the entire BusMall potential product catalog, showing how many times each product have been viewed and how many votes each has gotten.</p>
+    <button>Clear Data</button>
 
     <template id = "report-container-template">
             <h2 class = "views-votes-report-header">Product Voting Results</h2>
@@ -25,7 +30,6 @@
                     <canvas width = "400"></canvas>
                 </div>
     </template>
-
 
 <template id = "app-template">
     <section id = "report-container"></section>
