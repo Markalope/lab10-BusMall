@@ -11,46 +11,36 @@
 </head>
 
 <body>
-    <div id = root></div>
+    <div id = "root"></div>
     <header>
     <h1>BusMall Product Selection Survey Results</h1>
     <h2>The Votes Are In</h2>
-    </header>
+    </header>   
 
-
-    <template id = "product-display-template">
-        <div class = "flex-grid">
-            <div class = "col">
-            </div>
-        </div>
-    </template>
-
-<h2>Click on your favorite product to vote.</h2>
-
-    <p><strong>It's up to you</strong> to help select the best products for our BusMall catalog. You can vote for your favorite just by clicking on one of the three images above. Once you vote, we'll show you three more products - you can vote up to 25 times!</p>
+    <p><strong>The customers have chosen</strong> and here are the results! This is the entire BusMall potential product catalog, showing how many times each product have been viewed and how many votes each has gotten.</p>
 
     <template id = "report-container-template">
             <h2 class = "views-votes-report-header">Product Voting Results</h2>
-            <table class = "hidden">
-                <thead><tr>
-                    <th>Product Name</th>
-                    <th>View Count</th>
-                    <th>Vote Count</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-            </table>   
+                <div id = "chart-container">
+                    <canvas width = "400"></canvas>
+                </div>
     </template>
 
 
 <template id = "app-template">
     <section id = "report-container"></section>
 </template>
+
+<footer>
+        <p>Logo from: <a href='https://onlinelogomaker.com' title='Online Logo Maker'>onlinelogomaker.com</p>
+</footer>  
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
     <script src = "js/productoption.js"></script>
     <script src = "js/randomizer.js"></script>
     <script src = "js/Vote.js"></script>
     <script src = "js/report.js"></script>
+    <script src = "js/ReportChart.js"></script>
     <script src = "js/App.js"></script>
     <script src = "js/main.js"></script>
     
