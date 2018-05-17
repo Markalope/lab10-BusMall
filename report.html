@@ -24,11 +24,24 @@
     <p><strong>The customers have chosen</strong> and here are the results! This is the entire BusMall potential product catalog, showing how many times each product have been viewed and how many votes each has gotten.</p>
    
 
-    <template id = "report-container-template">
-            <h2 class = "views-votes-report-header">Product Voting Results</h2>
+    <template id = "chart-container-template">
+            <h2 class = "report-chart-header">Product Voting Results</h2>
                 <div id = "chart-container">
                     <canvas width = "400"></canvas>
                 </div>
+    </template>
+
+    <template id = "report-container-template">
+            <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>View Count</th>
+                            <th>Vote Count</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
     </template>
 
 <template id = "app-template">
