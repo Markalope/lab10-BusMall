@@ -1,12 +1,12 @@
 'use strict';
-/* globals clearReportData ViewingReport ViewingChart  */
+/* globals clearReportData ViewingReport ViewingChart productOption  */
 /* exported ReportApp productOption  */
 
 const appTemplate = document.getElementById('app-template');
 
 class ReportApp {
     constructor(){
-        this.productOption = this.productOption;
+        this.productOption = productOption;
         this.totalViews = 0;
     }
 

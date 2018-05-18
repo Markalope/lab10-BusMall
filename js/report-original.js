@@ -3,7 +3,6 @@
 /* exported ViewingReport ViewsVotesReport productOption */
 
 const viewingReportTemplate = document.getElementById('report-container-template').content;
-let ViewsAndVotesReport = '';
 
 class ViewingReport {
     constructor(productOption) {

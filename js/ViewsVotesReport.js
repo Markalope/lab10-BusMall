@@ -2,7 +2,7 @@
 
 const reportContainerTemplate = document.getElementById('report-container-template');
 
-class ViewsVotesReport {
+class ViewsAndVotesReport {
     constructor(productOption) {
         this.productOption = productOption;
     }
@@ -16,3 +16,4 @@ class ViewsVotesReport {
         return dom;
     }
 }
+// use this file to create the DOM objects - add a for loop to create the objects for each of the table rows.
