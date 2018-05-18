@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Eczar:700,500|Roboto:300,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>BusMall Catalog Product Voting Results</title>
+</head>
+
+<body>
+    <div id = "root"></div>
+    <header>
+        <div id = "logo-nav">
+            <img src="img/logo.png" height = "80px">
+            <span class = "nav"><a href="index.html">Home</a></span>
+        </div>
+    <h1>BusMall Product Selection Survey Results</h1>
+    <h2>The Votes Are In</h2>
+    </header>   
+
+    <p><strong>The customers have chosen</strong> and here are the results! This is the entire BusMall potential product catalog, showing how many times each product have been viewed and how many votes each has gotten.</p>
+   
+
+    <template id = "chart-container-template">
+            <h2 class = "report-chart-header">Product Voting Results</h2>
+                <div id = "chart-container">
+                    <canvas width = "400"></canvas>
+                </div>
+    </template>
+
+    <template id = "report-container-template">
+            <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>View Count</th>
+                            <th>Vote Count</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <button>Clear Data</button>
+    </template>
+
+<template id = "app-template">
+    <section id = "report-container"></section>
+    <section id = "chart-container"></section>
+</template>
+
+<footer>
+        <p>Logo from: <a href='https://onlinelogomaker.com' title='Online Logo Maker'>onlinelogomaker.com</p>
+</footer>  
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script src = "js/productoption.js"></script>
+    <script src = "js/report-original.js"></script>
+    <script src = "js/reportApp.js"></script>
+    <script src = "js/ReportChart.js"></script>
+    <script src = "js/ViewsVotesReport.js"></script>
+    <script src = "js/report.js"></script>
+    
+    
+</body>
+</html>
