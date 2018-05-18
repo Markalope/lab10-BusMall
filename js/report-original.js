@@ -1,6 +1,8 @@
 'use strict';
 
-/* exported ViewingReport ViewsVotesReport productOption */
+/* exported ViewingReport productOption */
+
+let ViewsAndVotesReport;
 
 const viewingReportTemplate = document.getElementById('report-container-template').content;
 
@@ -30,7 +32,7 @@ class ViewingReport {
         this.tableBody = dom.querySelector('tbody');
 
         for(let i = 0; i < this.productOption.length; i++){
-            const reportComponent = new ViewsAndVotesReport(this.productOption[i]);
+            let reportComponent = new ViewsAndVotesReport(this.productOption[i]);
             this.tableBody.appendChild(reportComponent.render());
         }
         return dom;

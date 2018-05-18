@@ -1,4 +1,7 @@
 'use strict';
+/* exported ViewsAndVotesReport */
+
+
 
 const reportContainerTemplate = document.getElementById('report-container-template');
 
