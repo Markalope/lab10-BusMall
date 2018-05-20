@@ -1,11 +1,11 @@
 'use strict';
-/* exported ViewsAndVotesReport */
+/* exported ViewingReport */
 
 
 
 const reportContainerTemplate = document.getElementById('report-container-template');
 
-class ViewsAndVotesReport {
+class ViewingReport {
     constructor(productOption) {
         this.productOption = productOption;
     }

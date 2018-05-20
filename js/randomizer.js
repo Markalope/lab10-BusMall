@@ -19,10 +19,14 @@ function selectImages(productOption) {
         
         imageArray[i] = selectedImage.image;
         productNameArray[i] = selectedImage.name;
+        console.log (productNameArray[i]);
         //remove the selected item to avoid duplication
         productOption.splice(index, 1);
+        
+        return productNameArray;
+        
     }
-    
+    console.log(productNameArray);
 }
 selectImages(productOption);
 
